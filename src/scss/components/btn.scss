@@ -1,0 +1,33 @@
+// btn
+.btn {
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 270px;
+  font-size: 20px;
+  line-height: normal;
+  color: #fff;
+  font-weight: 700;
+  background: linear-gradient(180deg, #011E41 0%, #002654 100%);
+  transition: box-shadow .2s linear, color .2s linear;
+  width: fit-content;
+  @media(max-width: 991px){
+    font-size: 16px;
+    height: 50px;
+  }
+  &:hover {
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(0, 0, 0, 0.2);    
+  }
+}
+.intro__btn {
+  margin-top: 30px;
+}
+.blog-btn {
+  margin-top: 40px;
+  @media(max-width: 991px){
+    margin-top: 25px;
+  }
+}

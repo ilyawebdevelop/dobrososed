@@ -1,0 +1,36 @@
+// Footer
+.footer {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  @media(max-width: 991px){
+    padding-top: 45px;
+    padding-bottom: 45px;
+  }
+  &__nav {
+    &-list {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      row-gap: 10px;
+      column-gap: 30px;
+      li {
+        grid-column: 6 span;
+        a {
+          font-family: $font-family-open;
+          border-bottom: 1px solid transparent;
+          padding-bottom: 2px;
+          transition: border-color .2s linear;
+          width: fit-content;
+          &:hover {
+            border-color: #000;
+          }
+        }
+      }
+    }
+  }
+  &__contacts {
+    font-family: $font-family-open;
+  }
+  .logo-descr {
+    font-weight: 500;
+  }
+}
