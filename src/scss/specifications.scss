@@ -102,6 +102,9 @@ section {
   @media (max-width: 991px) {
     margin-bottom: 24px;
   }
+  @media(max-width: 767px){
+    margin-bottom: 15px;
+  }
 }
 
 .section-title-page {
@@ -167,7 +170,7 @@ h2 {
   line-height: normal;
 
   @media(max-width: 991px) {
-    font-size: 20px;
+    font-size: 23px;
   }
 }
 

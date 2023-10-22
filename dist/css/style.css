@@ -10910,6 +10910,11 @@ section.section-first {
     margin-bottom: 24px;
   }
 }
+@media (max-width: 767px) {
+  .section-title {
+    margin-bottom: 15px;
+  }
+}
 
 .section-title-page {
   color: #0E1A2F;
@@ -10974,7 +10979,7 @@ h2 {
 }
 @media (max-width: 991px) {
   h2 {
-    font-size: 20px;
+    font-size: 23px;
   }
 }
 
