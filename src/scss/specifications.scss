@@ -293,6 +293,24 @@ h5 {
     width: 100%;
     max-height: 450px;
     object-fit: cover;
+    position: relative;
+    .content-gal {
+      display: none;
+      &:first-child {
+        display: block;
+      }
+    }
+    .gal-icon {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      pointer-events: none;
+      img {
+        @media(max-width: 767px){
+          width: 20px;
+        }
+      }
+    }
 
     @media(max-width: 991px) {
       grid-column: 12 span;
@@ -316,5 +334,17 @@ h5 {
   }
   .input-wrapper {
     margin-bottom: 15px;
+  }
+}
+.article-name {
+  margin-top: 10px;
+  margin-bottom: 30px;
+  @media(max-width: 767px){
+    margin-bottom: 20px;
+  }
+}
+.article-date {
+  @media(max-width: 767px){
+    font-size: 13px;
   }
 }

@@ -11102,6 +11102,24 @@ h5 {
   width: 100%;
   max-height: 450px;
   object-fit: cover;
+  position: relative;
+}
+.content-image .content-gal {
+  display: none;
+}
+.content-image .content-gal:first-child {
+  display: block;
+}
+.content-image .gal-icon {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  pointer-events: none;
+}
+@media (max-width: 767px) {
+  .content-image .gal-icon img {
+    width: 20px;
+  }
 }
 @media (max-width: 991px) {
   .content-image {
@@ -11128,6 +11146,22 @@ h5 {
 }
 .order-form .input-wrapper {
   margin-bottom: 15px;
+}
+
+.article-name {
+  margin-top: 10px;
+  margin-bottom: 30px;
+}
+@media (max-width: 767px) {
+  .article-name {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 767px) {
+  .article-date {
+    font-size: 13px;
+  }
 }
 
 .btn {
@@ -11783,6 +11817,121 @@ h5 {
 }
 .contacts-page .socials {
   margin-top: 15px;
+}
+
+.archive-card {
+  margin-bottom: 30px;
+}
+.archive-card__wrapper {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  column-gap: 30px;
+}
+@media (max-width: 767px) {
+  .archive-card__wrapper {
+    column-gap: 20px;
+  }
+}
+@media (max-width: 575px) {
+  .archive-card__wrapper {
+    column-gap: 0;
+    row-gap: 20px;
+  }
+}
+.archive-card__image {
+  grid-column: 5 span;
+}
+@media (max-width: 575px) {
+  .archive-card__image {
+    grid-column: 12 span;
+  }
+}
+.archive-card__image img {
+  height: 100%;
+  object-fit: cover;
+  height: 209px;
+  width: 100%;
+}
+.archive-card__content {
+  grid-column: 7 span;
+}
+@media (max-width: 575px) {
+  .archive-card__content {
+    grid-column: 12 span;
+  }
+}
+.archive-card__title {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  color: #011E41;
+  transition: color 0.2s linear;
+  max-height: 117px;
+  overflow: hidden;
+  -webkit-line-clamp: 5;
+  display: -webkit-box;
+  /* Включаем флексбоксы */
+  -webkit-box-orient: vertical;
+  /* Вертикальная ориентация */
+}
+.archive-card__title:hover {
+  color: #00377A;
+}
+.archive-card__link {
+  margin-top: 15px;
+}
+.archive-card__descr {
+  max-width: 500px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  /* Включаем флексбоксы */
+  /* Вертикальная ориентация */
+}
+
+.pagination {
+  justify-content: center;
+  margin-top: 40px;
+}
+.pagination ul {
+  display: flex;
+  column-gap: 5px;
+  justify-content: center;
+}
+.pagination ul li.prev-link a {
+  padding-left: 0;
+  padding-right: 0;
+}
+.pagination ul li.next-link a {
+  padding-left: 0;
+  padding-right: 0;
+}
+.pagination ul li.active a {
+  color: #fff;
+  background-color: #011E41;
+  pointer-events: none;
+}
+.pagination ul li.more a {
+  border-color: transparent;
+  padding-left: 0;
+  padding-right: 0;
+  min-width: 20px;
+}
+.pagination ul li a {
+  border: 1px solid #D6D6D6;
+  color: #000;
+  font-weight: 700;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.2s linear, background-color 0.2s linear;
+  padding-right: 12px;
+  padding-left: 12px;
+  min-width: 35px;
+}
+.pagination ul li a:hover {
+  background-color: #011E41;
+  color: #fff;
 }
 
 .footer {

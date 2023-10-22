@@ -1,0 +1,67 @@
+.archive {
+  &-card {
+    margin-bottom: 30px;
+    &__wrapper {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      column-gap: 30px;
+      @media(max-width: 767px){
+        column-gap: 20px;
+      }
+      @media(max-width: 575px){
+        column-gap: 0;
+        row-gap: 20px;
+      }
+
+    }
+    &__image {
+      grid-column: 5 span;
+      @media(max-width: 575px){
+        grid-column: 12 span;
+      }
+      img {
+        height: 100%;
+        object-fit: cover;     
+        height: 209px;
+        width: 100%;
+      }
+    }
+    &__content {
+      grid-column: 7 span;
+      @media(max-width: 575px){
+        grid-column: 12 span;
+      }
+    }
+    &__title {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      color: #011E41;
+      transition: color .2s linear;    
+
+      max-height: 117px;
+      overflow: hidden;
+      -webkit-line-clamp: 5;
+      display: -webkit-box;
+      /* Включаем флексбоксы */
+      -webkit-box-orient: vertical;
+      /* Вертикальная ориентация */
+
+      &:hover {
+        color: #00377A;
+      }
+    }
+    &__link {
+      margin-top: 15px;
+    }
+    &__descr {
+   
+      max-width: 500px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      /* Включаем флексбоксы */
+     
+      /* Вертикальная ориентация */
+    }
+  }
+}
