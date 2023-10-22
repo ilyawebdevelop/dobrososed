@@ -1,0 +1,92 @@
+.main-gal {
+  background-color: #E8EFF7;
+}
+
+.gal {
+  &-grid {
+    row-gap: 30px;
+    @media(max-width: 991px){
+      row-gap: 20px;
+    }
+  }
+
+  &-card {
+    height: 100%;
+
+    &--sm {
+      .gal-card__img {
+        img {
+          height: 245px;
+
+          @media(max-width: 1199px) {
+            height: 200px;
+          }
+
+          @media(max-width: 991px) {
+            height: 50vw;
+          }
+        }
+      }
+    }
+
+    &--main {
+      display: grid;
+      grid-template-rows: auto 38px;
+
+      .gal-card__img {
+        img {
+          height: 100%;
+        }
+
+      }
+    }
+
+    &__img {
+      overflow: hidden;
+      margin-bottom: 10px;
+      position: relative;
+
+      img {
+        transition: transform .2s linear;
+        width: 100%;
+        object-fit: cover;
+
+        &:hover {
+          transform: scale(1.01);
+        }
+      }
+    }
+
+    &__title {
+      height: 38px;
+      overflow: hidden;
+      -webkit-line-clamp: 2;
+      display: -webkit-box;
+      /* Включаем флексбоксы */
+      -webkit-box-orient: vertical;
+
+      /* Вертикальная ориентация */
+      transition: color .2s linear;
+      @media(max-width: 991px){
+        height: unset;
+      }
+
+      &:hover {
+        color: #00377A;
+      }
+    }
+
+    &__button {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      margin: auto;
+      width: 120px;
+      @media(max-width: 991px){
+        width: 60px;
+      }
+    }
+  }
+}

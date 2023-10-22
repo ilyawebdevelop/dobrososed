@@ -11525,6 +11525,87 @@ h5 {
   transform: scale(1.05);
 }
 
+.main-gal {
+  background-color: #E8EFF7;
+}
+
+.gal-grid {
+  row-gap: 30px;
+}
+@media (max-width: 991px) {
+  .gal-grid {
+    row-gap: 20px;
+  }
+}
+.gal-card {
+  height: 100%;
+}
+.gal-card--sm .gal-card__img img {
+  height: 245px;
+}
+@media (max-width: 1199px) {
+  .gal-card--sm .gal-card__img img {
+    height: 200px;
+  }
+}
+@media (max-width: 991px) {
+  .gal-card--sm .gal-card__img img {
+    height: 50vw;
+  }
+}
+.gal-card--main {
+  display: grid;
+  grid-template-rows: auto 38px;
+}
+.gal-card--main .gal-card__img img {
+  height: 100%;
+}
+.gal-card__img {
+  overflow: hidden;
+  margin-bottom: 10px;
+  position: relative;
+}
+.gal-card__img img {
+  transition: transform 0.2s linear;
+  width: 100%;
+  object-fit: cover;
+}
+.gal-card__img img:hover {
+  transform: scale(1.01);
+}
+.gal-card__title {
+  height: 38px;
+  overflow: hidden;
+  -webkit-line-clamp: 2;
+  display: -webkit-box;
+  /* Включаем флексбоксы */
+  -webkit-box-orient: vertical;
+  /* Вертикальная ориентация */
+  transition: color 0.2s linear;
+}
+@media (max-width: 991px) {
+  .gal-card__title {
+    height: unset;
+  }
+}
+.gal-card__title:hover {
+  color: #00377A;
+}
+.gal-card__button {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  margin: auto;
+  width: 120px;
+}
+@media (max-width: 991px) {
+  .gal-card__button {
+    width: 60px;
+  }
+}
+
 .footer {
   padding-top: 90px;
   padding-bottom: 90px;
