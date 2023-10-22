@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="icon" type="image/png" href="img/favicon.png">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&family=Open+Sans&display=swap"
+		rel="stylesheet">
+
+	<link rel="stylesheet" href="css/style.min.css">
+
+	<title>Ошибка 404</title>
+</head>
+
+<body>
+	
+	<div class="wrapper">
+		<!-- Header -->
+<header class="header" id="header">
+  <div class="container">
+    <div class="d-flex justify-content-between align-items-center">
+      <div class="d-flex align-items-center gap-2">
+        <a href="#" class="header__logo logo">
+          <img src="img/header/logo.png" alt="logo">
+        </a>
+        <div class="logo-descr">
+          МЕЖДУНАРОДНЫЙ ФОРУМ ДОБРОСОСЕДСТВА
+        </div>
+      </div>
+      <div class="search-wrapper d-none d-lg-flex">
+        <input class="search-input" type="search" placeholder="Поиск">
+      </div>
+      <!-- Hamburger Menu -->
+      <div class="hamburger" id="toggle">
+        <div class="top-bun"></div>
+        <div class="meat"></div>
+        <div class="bottom-bun"></div>
+      </div><!-- /Hamburger Menu -->
+    </div>
+    <nav class="header__nav">
+      <div class="mobile-head d-block d-lg-none">
+        <div class="container">
+          <div class="d-flex justify-content-between align-items-center">
+            <div class="search-wrapper d-flex d-lg-none">
+              <input class="search-input" type="search" placeholder="Поиск">
+            </div>
+            <div class="btn-close-menu">
+              <img src="img/icons/burger-close.svg" alt="close-menu">
+            </div>
+          </div>
+        </div>
+      
+      </div>
+      <ul class="header__nav-list d-flex justify-content-center justify-content-lg-between gap-3 gap-lg-0">
+        <li class="current-menu-item"><a href="#">Об организации</a></li>
+        <li><a href="#">Лидеры</a></li>
+        <li><a href="#">Программа</a></li>
+        <li><a href="#">Новости</a></li>
+        <li><a href="#">Фото и видео</a></li>
+        <li><a href="#">Контакты</a></li>
+        <li><a href="#">Сми о нас</a></li>
+        <li><a href="#">Обратная свзязь</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+		<main class="main">		
+			<section class="error-page page-sect-first pb-0">
+  <div class="container">
+    <h1 class="section-title">Ошибка 404</h1>
+    <p class="error-descr"><?php esc_html_e('Вы попали на страницу, которой не существует', 'brickstone'); ?></p>
+
+    <a class="btn mt-4 mx-auto" href="/">Вернуться на главную</a>
+  </div>
+</section>
+		</main>
+		<!-- Footer -->
+<footer class="footer" id="footer">
+  <div class="container">
+    <div class="row gap-5 gap-lg-0">
+      <div class="col-lg-5">
+        <div class="d-flex align-items-center gap-2">
+          <a href="#" class="footer__logo logo">
+            <img src="img/header/logo.png" alt="logo">
+          </a>
+          <div class="logo-descr">
+            МЕЖДУНАРОДНЫЙ ФОРУМ ДОБРОСОСЕДСТВА
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <nav class="footer__nav">
+          <ul class="footer__nav-list">
+            <li><a href="#">О организации</a></li>
+            <li><a href="#">Фото и видео</a></li>
+            <li><a href="#">Лидеры</a></li>
+            <li><a href="#">Контакты</a></li>
+            <li><a href="#">Программа</a></li>
+            <li><a href="#">Сми о нас</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Обратная свзязь</a></li>
+          </ul>
+        </nav>
+      </div>
+      <div class="col-lg-3">
+        <div class="footer__contacts d-flex flex-column gap-2">
+          <span>Контакты:</span>
+          <div class="d-flex gap-1">
+            Тел.: 
+            <a href="tel:+375336198675">+375 33 619 8675</a>
+          </div>
+          <div class="d-flex gap-1">
+            Email: 
+            <a href="mailto:Ipainf@yandex.ru">Ipainf@yandex.ru</a>
+          </div>
+        </div>
+        <div class="footer-socials socials">
+          <ul class="socials-list">
+            <li class="socials-item">
+              <a href="#">
+                <img src="img/admin/socials/tiktok.svg" alt="icon">
+              </a>
+            </li>
+            <li class="socials-item">
+              <a href="#">
+                <img src="img/admin/socials/telegram.svg" alt="icon">
+              </a>
+            </li>
+            <li class="socials-item">
+              <a href="#">
+                <img src="img/admin/socials/facebook.svg" alt="icon">
+              </a>
+            </li>
+            <li class="socials-item">
+              <a href="#">
+                <img src="img/admin/socials/tiktok.svg" alt="icon">
+              </a>
+            </li>
+            <li class="socials-item">
+              <a href="#">
+                <img src="img/admin/socials/instagram.svg" alt="icon">
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+		<!-- modal -->
+<!-- event -->
+<div class="modal fade modal-order" id="modal-order" tabindex="-1" aria-labelledby="exampleModalLabel"
+  aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-title">Оставьте заявку</div>
+      <div class="modal-form">
+        <div class="input-wrapper">
+          <input class="form-input" type="text" placeholder="ФИО">
+        </div>
+        <div class="input-wrapper">
+          <input class="form-input" type="tel" placeholder="Телефон">
+        </div>
+        <div class="input-wrapper">
+          <input class="form-input" type="email" placeholder="Email">
+        </div>
+        <div class="input-wrapper">
+          <textarea class="form-textarea" name="order-text" id="order-text" cols="30" rows="10" placeholder="Род деятельности"></textarea>
+        </div>
+        <div class="agreement">
+          <input type="checkbox">
+          <div class="agreement-text">
+            Я даю согласие на <a href="#" target="_blank">храние и обработку персональных данных</a> 
+          </div>
+        </div>
+        <button class="btn modal-btn">Вступить</button>
+      </div>
+      <button type="button" class="modal-close" data-dismiss="modal" aria-label="Close">
+        <img src="img/icons/burger-close.svg" alt="close">
+      </button>
+    </div>
+  </div>
+</div>
+	</div>
+	
+	<script src="js/app.min.js"></script>
+
+
+	
+</body>
+
+</html>
+
+
+
+

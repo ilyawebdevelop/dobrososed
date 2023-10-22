@@ -307,3 +307,14 @@ h5 {
     padding-top: 35px;
   }
 }
+.order-form {
+  max-width: 570px;
+  margin-left: auto;
+  margin-right: auto;
+  .agreement-text {
+    max-width: unset;
+  }
+  .input-wrapper {
+    margin-bottom: 15px;
+  }
+}
