@@ -31,3 +31,9 @@
     margin-top: 25px;
   }
 }
+.modal-btn{
+  height: 44px;
+  @media(max-width: 575px){
+    width: 100%;
+  }
+}
