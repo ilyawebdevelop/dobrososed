@@ -40,3 +40,24 @@
   right: 15px;
   top: 15px;
 }
+.agreement {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  input {
+    width: 20px;
+    height: 20px;
+    min-width: 20px;
+    cursor: pointer;
+  }
+  &-text {
+    font-size: 12px;
+    line-height: 148.9%;
+    letter-spacing: 0.24px;   
+    max-width: 235px; 
+    a {
+      display: inline;
+      font-weight: 500;
+    }
+  }
+}

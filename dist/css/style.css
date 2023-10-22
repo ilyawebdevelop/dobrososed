@@ -11159,6 +11159,10 @@ h5 {
 
 .modal-btn {
   height: 44px;
+  min-width: 190px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 25px;
 }
 @media (max-width: 575px) {
   .modal-btn {
@@ -11244,6 +11248,28 @@ h5 {
   position: absolute;
   right: 15px;
   top: 15px;
+}
+
+.agreement {
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+}
+.agreement input {
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  cursor: pointer;
+}
+.agreement-text {
+  font-size: 12px;
+  line-height: 148.9%;
+  letter-spacing: 0.24px;
+  max-width: 235px;
+}
+.agreement-text a {
+  display: inline;
+  font-weight: 500;
 }
 
 .header {
