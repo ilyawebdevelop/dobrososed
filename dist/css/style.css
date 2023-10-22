@@ -10874,6 +10874,15 @@ section.section-first {
   }
 }
 
+div.section-first {
+  padding-top: 90px;
+}
+@media (max-width: 991px) {
+  div.section-first {
+    padding-top: 40px;
+  }
+}
+
 .form-input {
   height: 45px;
   border-radius: 0;
@@ -11737,6 +11746,22 @@ h5 {
 }
 @media (max-width: 991px) {
   .gal-card--sm .gal-card__img img {
+    height: 50vw;
+  }
+}
+.gal-card--video .gal-card__img > img {
+  height: 370px;
+}
+@media (max-width: 991px) {
+  .gal-card--video .gal-card__img > img {
+    height: 50vw;
+  }
+}
+.gal-card--photo .gal-card__img img {
+  height: 400px;
+}
+@media (max-width: 991px) {
+  .gal-card--photo .gal-card__img img {
     height: 50vw;
   }
 }

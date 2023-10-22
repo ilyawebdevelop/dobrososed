@@ -67,6 +67,12 @@ section {
     }
   }
 }
+div.section-first {
+  padding-top: 90px;
+  @media(max-width: 991px) {
+    padding-top: 40px;
+  }
+}
 
 .form-input {
   height: 45px;

@@ -28,6 +28,27 @@
         }
       }
     }
+    &--video {
+     
+      .gal-card__img {
+        &>img {
+          height: 370px;
+          @media(max-width: 991px){
+            height: 50vw;
+          }
+        }
+      }
+    }
+    &--photo {
+      .gal-card__img {
+        img {
+          height: 400px;
+          @media(max-width: 991px){
+            height: 50vw;
+          }
+        }
+      }
+    }
 
     &--main {
       display: grid;
