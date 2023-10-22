@@ -7,11 +7,16 @@
     padding-bottom: 45px;
   }
   &__nav {
+    padding-right: 80px;
+    @media(max-width: 1199px){
+      padding-right: 15px;
+    }
     &-list {
       display: grid;
       grid-template-columns: repeat(12, 1fr);
       row-gap: 10px;
-      column-gap: 30px;
+      column-gap: 10px;
+    
       li {
         grid-column: 6 span;
         a {
@@ -32,5 +37,8 @@
   }
   .logo-descr {
     font-weight: 500;
+  }
+  .socials {
+    margin-top: 15px;
   }
 }

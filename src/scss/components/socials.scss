@@ -1,0 +1,22 @@
+.socials {
+  &-list {
+    column-gap: 16px;
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 16px;
+  }
+  &-item {
+    a {    
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: transform .2s linear;
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+  }
+}
