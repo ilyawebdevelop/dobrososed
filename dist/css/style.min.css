@@ -11255,6 +11255,11 @@ h5 {
   align-items: center;
   column-gap: 15px;
 }
+@media (max-width: 767px) {
+  .agreement {
+    column-gap: 7px;
+  }
+}
 .agreement input {
   width: 20px;
   height: 20px;
