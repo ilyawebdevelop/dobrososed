@@ -1,5 +1,6 @@
 import * as flsFunctions from "./modules/functions.js";
 import "./modules/jquery-3.6.1.min.js";
+import "./modules/video.min.js";
 import "./modules/bootstrap.bundle.min.js";
 import "./modules/fslightbox.js";
 import './components.js';

@@ -326,6 +326,9 @@ h5 {
 
 .page-sect-first {
   padding-top: 70px;
+  @media(max-width: 1500px){
+    padding-top: 40px;
+  }
 
   @media(max-width: 991px) {
     padding-top: 35px;
@@ -352,5 +355,48 @@ h5 {
 .article-date {
   @media(max-width: 767px){
     font-size: 13px;
+  }
+}
+.video-js {
+  width: 100%;
+  height: 370px;
+  background: #fff;
+  @media(max-width: 991px){
+    height: 50vw;
+  }
+  .vjs-big-play-button {
+    width: 120px;
+    height: 120px;
+    border-color: rgba(205, 205, 205, 0.50);
+    border-width: 14px;
+    border-radius: 50%;
+    background-color: transparent;
+    top: 50%;
+    transform: translateY(-50%);
+    position: absolute;
+    margin-top: unset;          
+    @media(max-width: 767px){
+      width: 90px;
+      height: 90px;
+      border-width: 10px;
+    }
+    .vjs-icon-placeholder:before {
+      content: '';
+      background: url('@img/icons/play-icon.svg') no-repeat right 22px center / 40px;
+      @media(max-width: 767px){
+        background-size: 20px;
+      }
+    }
+  }
+}
+.vjs-poster img {
+  object-fit: cover;
+}
+.video-iframe {
+  width: 100%;
+  height: 370px;
+  background: #fff;
+  @media(max-width: 991px){
+    height: 50vw;
   }
 }
