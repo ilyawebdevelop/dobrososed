@@ -15,6 +15,7 @@
     }
     @media(max-width: 767px){
       padding-top: 35px;
+      row-gap: 20px;
     }
   }
   &__title {
@@ -54,8 +55,8 @@
       position: absolute;
       width: 788px;
       height: 100%;
-      left: -308px;
-      top: -45px;
+      left: -347px;
+      top: -2px;
       background: url('@img/admin/intro/flag.png') no-repeat center center / contain;
       z-index: -1;
     }
@@ -73,8 +74,11 @@
     height: 100%;
     left: 0;
     top: 0;
-    background: linear-gradient(90deg, #011E41 0%, rgba(1, 30, 65, 0.30) 100%);
+    background: linear-gradient(180deg, #011E41 0%, rgba(1, 30, 65, 0.30) 100%);
     z-index: 1;
+    @media(max-width: 767px){
+
+    }
   }
   &__bg {
     width: 100%;

@@ -24,6 +24,9 @@
 }
 .intro__btn {
   margin-top: 30px;
+  @media(max-width: 767px){
+    margin-top: 20px;
+  }
 }
 .blog-btn {
   margin-top: 40px;
