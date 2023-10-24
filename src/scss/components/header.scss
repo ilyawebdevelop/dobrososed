@@ -8,6 +8,11 @@
     padding-top: 20px;
   }
 
+  @media(max-width: 767px) {
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }
+
   &__nav {
     margin-top: 30px;
 
@@ -48,12 +53,14 @@
         &.current-menu-item {
           font-weight: 600;
         }
+
         a {
           font-family: $font-family-open;
           font-size: 15px;
           border-bottom: 1px solid transparent;
           padding-bottom: 2px;
           transition: border-color .2s linear;
+
           &:hover {
             border-color: #000;
           }
